@@ -1,0 +1,52 @@
+Sections:
+	.init       type:code
+	extab       type:rodata
+	extabindex  type:rodata
+	.text       type:code
+	.ctors      type:rodata
+	.dtors      type:rodata
+	.rodata     type:rodata
+	.data       type:data
+	.bss        type:bss
+	.sdata      type:data
+	.sbss       type:bss
+	.sdata2     type:rodata
+	.sbss2      type:bss
+
+Dolphin/card/CARDBios.c:
+	.text       start:0x80310B0C end:0x80311E2C
+	.data       start:0x8035A260 end:0x8035A280
+	.bss        start:0x804F7218 end:0x804F7458
+
+Dolphin/card/CARDUnlock.c:
+	.text       start:0x80311E2C end:0x8031308C
+	.data       start:0x8035A280 end:0x8035A3E0
+	.sdata      start:0x80535418 end:0x8053541C
+
+Dolphin/card/CARDRdwr.c:
+	.text       start:0x8031308C end:0x8031330C
+
+Dolphin/card/CARDBlock.c:
+	.text       start:0x8031330C end:0x80313674
+
+Dolphin/card/CARDDir.c:
+	.text       start:0x80313674 end:0x803138D8
+
+Dolphin/card/CARDCheck.c:
+	.text       start:0x803138D8 end:0x8031425C
+
+Dolphin/card/CARDMount.c:
+	.text       start:0x8031425C end:0x80314BA8
+	.data       start:0x8035A3E0 end:0x8035A420
+
+Dolphin/card/CARDFormat.c:
+	.text       start:0x80314BA8 end:0x80315398
+
+Dolphin/card/CARDOpen.c:
+	.text       start:0x80315398 end:0x80315694
+
+Dolphin/card/CARDCreate.c:
+	.text       start:0x80315694 end:0x80315A2C
+
+Dolphin/card/CARDRead.c:
+	.text       start:0x80315A2C end:0x80315EA4
